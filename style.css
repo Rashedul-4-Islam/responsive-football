@@ -146,6 +146,14 @@ football fan shop styles
     font-weight: 700;
     color: rgb(153, 53, 53);
 }
+.item-details a{
+    background-color: rgb(41, 38, 37);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px;
+}
 .filled{
     color:rgb(233, 32, 116);
 }
@@ -198,3 +206,18 @@ footer{
         grid-template-columns: repeat(1 , 1fr);
     }
 }
+
+/*-------------
+ responsive for tab/ipad device -
+ ------------- */
+ @media only screen and (min-width:688px) and (max-width:992px){
+    .copa-banner img{
+        width: 330px;
+        height: 260px;
+    }
+    .players, .kit-gallery, .products-item{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+ }
