@@ -59,8 +59,8 @@
     width: 330px;
     height: 474px;
     padding: 10px;
-    background-color:rgb(248, 222, 222);
-    box-shadow: 2px 4px 8px rgb(199, 183, 183);
+    background-color:whitesmoke;
+    box-shadow: 2px 8px 12px grey;
 }
 
 .player img{
@@ -92,7 +92,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 90px;
     background-color: hotpink;
     padding: 30px;
 }
@@ -123,6 +123,7 @@
 }
 .kits:hover{
     transform: scale(0.8);
+    transition: transform 0.5s ease-out;
 }
 .kits img{
     width: 250px;
@@ -144,7 +145,12 @@ football fan shop styles
     width: 210px;
     padding: 50px;
     line-height: 30px;
-    
+    background-color: hotpink;
+    border-radius: 10px; 
+}
+.shop:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s ;
 }
 .products-item{
     display: grid;
@@ -177,8 +183,9 @@ football fan shop styles
     color: #ffffff;
     padding: 5px;
 }
+
 .filled{
-    color:rgb(233, 32, 116);
+    color:rgb(156, 233, 32);
 }
 
 
@@ -210,7 +217,7 @@ footer{
 }
 .icon i{
     margin-left: 20px;
-    color:rgb(61, 20, 173);
+    color:rgb(38, 39, 37);
     padding-left: 30px;
    
 }
@@ -243,6 +250,9 @@ footer{
     .players, .kit-gallery, .products-item{
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
+    }
+    .logo-container{
+        width: 100%;
     }
 }
 
