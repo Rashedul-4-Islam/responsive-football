@@ -28,12 +28,17 @@
     position: relative;
     top: 38px;
     color:whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif
 }
+
 .copa-banner{
     width: 50%;
 }
 .copa-banner img:hover{
-    transform: scale(0.8) rotate(-20deg);
+    transform: scale(0.8) rotate(-40deg);
+    transition: transform 1s ease-out;
 }
 
 /* ----------
@@ -42,32 +47,45 @@
 .top-player{
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 70px;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
 }
 .player{
-    Width: 330px;
-    Height: 460px;
+    width: 330px;
+    height: 474px;
     padding: 10px;
-    background-color:white;
+    background-color:rgb(248, 222, 222);
     box-shadow: 2px 4px 8px rgb(199, 183, 183);
-    border-radius: 20px;
 }
 
 .player img{
-    width: 100%;  
+    width: 300px;
+    height: 256px;  
 }
-.player img:hover{
-    transform: scale(0.9)  rotate(10deg); 
+.profile{
+    width: 300px;
+    height: 426px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.player-details{
+    margin-top: 16px;
+}
+
+.player-details h2{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
 }
 .player-details p{
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 10px;
+    line-height: 26px;
 }
 /* extra section styles */
 .extra-container{
@@ -175,21 +193,33 @@ footer{
     align-items: center;
 
 }
+.logo-container{
+    width: 485px;
+    height: 213px;
+    padding: 20px;
+}
 .football-logo{
-    width: 450px;
+    width: 484px;
     height: 200px;
     display: block;
     text-align: center; 
 }
+.football-logo img{
+     width: 483.87px;
+     height: 110px;
+}
 .icon i{
     margin-left: 20px;
-    color:rgb(49, 4, 4);
+    color:rgb(61, 20, 173);
     padding-left: 30px;
    
 }
 .football-logo p{
     margin-top: 30px;
     padding-left: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
     
 }
 
