@@ -232,9 +232,13 @@ footer{
         display: grid;
         grid-template-columns: repeat(1 , 1fr);
     }
+    .copa-america h1{
+        font-size: 36px;
+    }
     .copa-banner img{
         width: 330px;
         height: 260px;
+        margin-left: 20px;
     }
     .players, .kit-gallery, .products-item{
         display: grid;
