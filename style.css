@@ -37,7 +37,7 @@
     width: 50%;
 }
 .copa-banner img:hover{
-    transform: scale(0.8) rotate(25deg);
+    transform: scale(0.8) rotate(30deg);
     transition: transform 1s ease-out;
 }
 
@@ -87,8 +87,8 @@
     padding-top: 10px;
     line-height: 26px;
 }
-/* extra section styles */
-.extra-container{
+/* teams kits  styles */
+.kits-container{
     width: 100%;
     display: flex;
     justify-content: center;
