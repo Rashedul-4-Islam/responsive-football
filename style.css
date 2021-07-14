@@ -37,7 +37,7 @@
     width: 50%;
 }
 .copa-banner img:hover{
-    transform: scale(0.8) rotate(-40deg);
+    transform: scale(0.8) rotate(30deg);
     transition: transform 1s ease-out;
 }
 
