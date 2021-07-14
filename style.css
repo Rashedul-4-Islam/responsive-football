@@ -29,6 +29,12 @@
     top: 38px;
     color:whitesmoke;
 }
+.copa-banner{
+    width: 50%;
+}
+.copa-banner img:hover{
+    transform: scale(0.8) rotate(-20deg);
+}
 
 /* ----------
    main section style
@@ -50,14 +56,100 @@
     padding: 10px;
     background-color:white;
     box-shadow: 2px 4px 8px rgb(199, 183, 183);
+    border-radius: 20px;
 }
+
 .player img{
-    width: 100%;   
+    width: 100%;  
+}
+.player img:hover{
+    transform: scale(0.9)  rotate(10deg); 
 }
 .player-details p{
     font-size: 20px;
     padding-top: 10px;
 }
+/* extra section styles */
+.extra-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: hotpink;
+    padding: 30px;
+}
+.jersy-gallery h2, .fan-shop > h2{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.kit-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+.kits{
+    width: 310px;
+    height: 390px;
+    text-align: center;
+    background-color:#ffffff
+    ;
+    box-shadow: 5px 10px 15px rgb(29, 31, 27);
+    border-radius: 10px;
+}
+.kits:hover{
+    transform: scale(0.8);
+}
+.kits img{
+    width: 250px;
+    height: 310px;
+    padding: 10px;
+}
+
+/* ------------
+football fan shop styles 
+-------------- */
+.shop-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+.shop{
+    width: 210px;
+    padding: 50px;
+    line-height: 30px;
+    
+}
+.products-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px ;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+}
+.products img{
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border:3px solid;
+    box-shadow: 5px 5px 20px grey;
+}
+.products img:hover{
+    transform: scale(0.9);
+}
+.item-details p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(153, 53, 53);
+}
+.filled{
+    color:rgb(233, 32, 116);
+}
+
 
 /* ----------
 footer area styles 
@@ -86,4 +178,23 @@ footer{
     margin-top: 30px;
     padding-left: 20px;
     
+}
+
+/* -------------responsive for mobile device
+--------------  */
+@media only screen and (max-width:688px){
+    .copa-container{
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .copa-banner img{
+        width: 330px;
+        height: 260px;
+    }
+    .players, .kit-gallery, .products-item{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
 }
